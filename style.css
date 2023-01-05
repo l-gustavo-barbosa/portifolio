@@ -1,0 +1,419 @@
+@import url(reset.css);
+@import url(card.css);
+@import url(btn-cta.css);
+
+
+body {
+    margin: 0px;
+    background-color: #0A1A17;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 66px;
+    border-bottom: 4px solid #FF6700;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(25px);
+    padding: 24px 0 24px 0;
+}
+
+.cabecalho .container-m {
+    display: none;
+}
+
+.cabecalho .container {
+    width: auto;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0px 48px 0px 48px;
+}
+
+.cabecalho .container .logo {
+    height: 100%;
+    width: auto;
+    display: inline-block;
+
+
+}
+
+.cabecalho .container .logo img {
+    height: 100%;
+}
+
+.cabecalho .container .menu {
+    display: inline-block;
+    font-family: 'Red Hat Display', sans-serif;
+    align-items: center;
+    height: 32px;
+}
+
+.cabecalho .container .menu li{
+    display: inline;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #2DA29B;
+}
+
+.cabecalho .container .menu li a{
+    color: #2DA29B;
+    padding: 0px 16px 0 16px;
+}
+
+.cabecalho .container .menu li a:hover {
+    color: #fff;
+    border-bottom: 4px solid #FF6700;
+    border-radius: 2px;
+}
+
+.cabecalho .container .entrar{
+    background-color: #2DA29B;
+    padding: 8px 16px 8px 16px;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.cabecalho .container .entrar:hover{
+    background-color: #FF6700;
+    filter: drop-shadow(0px 4px 4px rgba(10, 26, 23, 0.25));
+}
+
+.cabecalho .container .entrar a{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.galeria {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.galeria .fotos {
+    width: 400%;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.galeria .fotos picture img{
+    width: 24.9%;
+}
+
+@keyframes animacao {
+    0% { margin-left: 0%;}
+    25%{margin-left: 0%;}
+    33%{margin-left: -100%;}
+    60%{margin-left: -100%;}
+    66%{margin-left: -200%;}
+    95%{margin-left: -200%;}
+    100%{margin-left: -300%;}
+}
+
+.lion {
+  display: block;
+  background: #fff;
+  padding: 90px;
+  margin: 48px;
+  max-width: 1344px;
+  border-radius: 64px;
+  box-shadow: inset -8px -8px 16px rgba(10, 26, 23, 0.3), inset 8px 8px 16px rgba(10, 26, 23, 0.3);
+}
+
+.lion p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(10, 26, 23, 0.8);
+    margin-bottom: 48px;
+  }
+
+.lion h5{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2DA29B;    
+}
+
+#cursos{
+    width: auto;
+    margin: 0px 48px 0px 48px;
+
+}
+
+#cursos .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+#cursos h1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    color: #2DA29B;
+    margin-bottom: 24px;
+}
+
+.para-quem {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    padding: 48px;
+}
+
+.para-quem h1{
+    color: #0A1A17;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 24px;
+}
+
+.para-quem .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.para-quem .pessoas{
+    width: 240px;
+}
+
+.para-quem .pessoas img{
+    max-width: 160px;
+    margin-left: 40px;
+}
+.para-quem h5{
+    color: #0A1A17;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#professores {
+    width: auto;
+    height: auto;
+    margin: 48px 48px 48px 48px;
+    
+}
+
+#professores .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#professores h1{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    color: #2DA29B;
+    margin-bottom: 24px;
+}
+
+.card-professor{
+    height: 268px;
+    width: 328px;
+    margin-bottom: 24px;
+    
+}
+
+.card-professor img{
+    width: 68px;
+    height: auto;
+    border: solid 4px #2DA29B;
+    border-radius: 100%;
+    z-index: 10;
+    float: left;
+    outline: 8px solid #0A1A17;
+}
+
+.card-professor .sobre-professor{
+    width: auto;
+    height: auto;
+    background-color: #0A1A17;
+    border: 4px solid #2DA29b;
+    border-radius: 8px;
+    padding: 8px;
+    min-height: 206px;
+    margin-top: 38px;
+}
+
+.card-professor .sobre-professor h5{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #2DA29B;
+    margin-left: 80px;
+    margin-bottom: 16px;
+}
+
+.card-professor .sobre-professor p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+}
+
+#sobre {
+    width: auto;
+    height: auto;
+    margin: 48px;
+}
+
+#sobre h1 {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    color: #2DA29B;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#sobre .foto{
+    width: 300px;
+    height: 300px;
+    border: solid 8px #0A1A17;
+    outline: solid 8px #2DA29B;
+    border-radius: 158px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sobre .foto img{
+    width: auto;
+    height: 100%;    
+}
+
+#sobre p{
+    max-width: 50%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    border-top: 4px solid #FF6700;
+    padding: 48px;
+
+}
+
+footer img{
+    width: 200px;
+    margin-bottom: 24px;
+    display: block;
+    margin: 0 auto 32px auto;
+}
+
+footer h5{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #2DA29B;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+
+}
+footer ul li{
+    max-width: 48px;
+    height: auto;
+    display: inline-block;
+    margin: 8px;
+
+}
+
+footer ul li img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .cabecalho .container{
+      display: none;
+
+    }
+
+    .cabecalho {
+        position: static;
+    }
+
+    .cabecalho .container-m {
+        display: flex;
+        margin-left: 24px;
+    }
+
+    .cabecalho .container-m .logo{
+        height: 100%;
+    }
+
+
+    .lion {
+        padding: 32px;
+        margin: 48px;
+      }
+
+    #sobre p{
+        max-width: none;
+    }
+}

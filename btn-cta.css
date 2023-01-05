@@ -1,0 +1,28 @@
+.btn-cta{
+    background-color: #2DA29B;
+    border-radius: 29px;
+    padding: 8px 16px 8px 16px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0;
+}
+
+.btn-cta:hover{
+    top: -8px;
+    box-shadow: inset -8px 8px 16px rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(10, 26, 23, 0.25));
+}
+
